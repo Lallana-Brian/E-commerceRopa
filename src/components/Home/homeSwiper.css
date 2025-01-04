@@ -1,0 +1,98 @@
+/* homeSwiper.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar el scroll horizontal */
+  width: 100%;
+}
+
+.home-swiper-container {
+  width: 100vw; /* El carrusel ocupa todo el ancho de la pantalla */
+  height: 100%; /* El carrusel ocupa toda la altura de la pantalla */
+  overflow: hidden;
+  position: relative;
+  background-color: var(--body-color);
+}
+
+.home-swiper-slide {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--body-color);
+  margin: 0 auto;
+}
+
+.image-section {
+  width: 100%;
+  height: 100%;
+}
+
+.image-section img {
+  width: 400px;
+  height: auto;
+  padding: 1rem;
+  margin: 6rem 1rem 1rem;
+  object-fit: cover; 
+}
+
+.content-section {
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 3%;
+  width: 500px;
+}
+
+.content-section h1 {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-0-75);
+  margin-top: 15%;
+}
+
+.content-section h2 {
+  font-size: var(--biggest-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  margin-top: 10px;
+}
+
+.content-section h3 {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-0-75);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.content-section button {
+  padding: 10px 20px;
+  background-color: var(--first-color-alt);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 25%;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.content-section button:hover {
+  background-color: var(--first-color);
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 15px;
+  }
+
+  .image-section img {
+    height: 300px;
+  }
+}

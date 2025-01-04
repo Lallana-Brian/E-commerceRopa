@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+        <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> 
+
+        <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+    
+    <title>Responsive e-comerce website</title>
+</head>
+
+<body>
+    
+<!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxs-shopping-bags nav__logo-icon"></i> República
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav__link active-link">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Tienda</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Carrito</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- CARRITO -->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+
+        <h2 class="cart__title-center">My cart</h2>
+
+        <div class="cart__container">
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/t-shirt1.png" alt="t-shirt" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart___price">Remera1</h3>
+                    <span class="cart__price">$20.000</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/t-shirt2.png" alt="t-shirt" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart___price">Remera2</h3>
+                    <span class="cart__price">$20.000</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/t-shirt3.png" alt="t-shirt" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart___price">Remera3</h3>
+                    <span class="cart__price">$20.000</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">$60.000</span>
+        </div>
+    </div>
+    
+<!-- LOGIN -->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+
+        <h2 class="login__title-center">Registro</h2>
+
+        <form action="" class="login__form grid">
+
+            <div class="login__content">
+                <label for="" class="login__label">Correo</label>
+                <input type="email" class="login__input">
+            </div>
+
+            <div class="login__content">
+                <label for="" class="login__label">Contraseña</label>
+                <input type="password" class="login__input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Entrar</a>
+            </div>
+
+            <div>
+                <p class="signup">No sos miembro? <a href="registration.html">Registrarse</a></p>
+            </div>
+        </form>
+    </div>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- HOME -->
+    <section class="home container">
+        <div class="swiper home-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- HOME SWIPER -->
+                <section class="swiper-slide"> <!-- Esta es una diapositiva individual del carrusel Swiper -->
+                    <!-- Contenedor principal del contenido de la diapositiva -->
+                    <div class="home__content grid">
+        
+                        <!-- Agrupador para la imagen y los detalles secundarios -->
+                        <div class="home__group">
+                            <!-- Imagen principal que muestra el producto o el contenido visual principal de esta diapositiva -->
+                            <img src="assets/img/short-menu.png" alt="" class="home__img">
+
+                            <!-- Indicador decorativo o visual (puede ser un punto o elemento de diseño) -->
+                            <div class="home__indicator"></div>
+
+                            <!-- Detalles adicionales del producto, como el nombre y una breve descripción -->
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">Jurry</h4> <!-- Nombre del producto -->
+                                <span class="home__details-subtitle">Algodón orgánico</span> <!-- Descripción breve -->
+                            </div>
+                        </div>
+
+                        <!-- Información principal de la diapositiva -->
+                        <div class="home__data">
+                            <!-- Texto descriptivo para destacar el producto como tendencia -->
+                            <h3 class="home__subtitle"># 1 TENDENCIA DEL MOMENTO </h3>
+                            <!-- Título llamativo para promocionar una oferta -->
+                            <h1 class="home__title">SALE 20%<br> OFF ON <br> SHORTS</h1>
+                            <!-- Descripción más extensa del producto -->
+                            <p class="home__description">Los shorts "Jurry" están fabricados con una mezcla premium de algodón orgánico y elastano. Material de alta calidad permite una gran durabilidad, transpirabilidad y libertad de movimiento, ideal tanto para actividades al aire libre como para el día a día.</p>
+                            <!-- Botones de acción para el usuario -->
+                            <div class="home__buttons">
+                                <a href="details.html" class="button">Comprar</a> <!-- Botón principal de compra -->
+                                <a href="details.html" class="button--link button--flex">Ver detalles<i class="bx bx-right-arrow-alt button__icon"></i></a> <!-- Botón de enlace para ver más detalles del producto -->
+                            </div>
+                        </div>
+                    </div>
+                </section>              
+
+                <!-- HOME SWIPER 2-->
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group">
+                            <img src="assets/img/remera-inicio.png" alt="" class="home__img">
+                            <div class="home__indicator"></div>
+
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">The "Stained"</h4>
+                                <span class="home__details-subtitle">Algodón Orgánico</span>
+                            </div>
+                        </div>
+
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#2 BEST DUO</h3>
+                            <h1 class="home__title">ORIGINAL <br> IS NEVER <br> FINISHED!!!</h1>
+                            <p class="home__description">Descubre la nueva colección de "Marea Urbana" con esta exclusiva remera de algodón orgánico. Las costuras reforzadas y el acabado de doble puntada en los bordes aseguran durabilidad. Esta remera es una perfecta fusión de arte y funcionalidad.
+                            </p>
+                            <div class="home__buttons">
+                                <a href="details.html" class="button">Comprar</a>
+                                <a href="details.html" class="button--link button--flex">Ver detalles<i
+                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HOME SWIPER 3-->
+                <section class="swiper-slide">
+                    <div class="home__content grid">
+                        <div class="home__group">
+                            <img src="assets/img/remera-inicio2.png" alt="" class="home__img">
+                            <div class="home__indicator"></div>
+
+                            <div class="home__details-img">
+                                <h4 class="home__details-title">Jqueezy</h4>
+                                <span class="home__details-subtitle">Algodón orgánico</span>
+                            </div>
+                        </div>
+
+                        <div class="home__data">
+                            <h3 class="home__subtitle">#3 TENDENCIA DEL MOMENT0</h3>
+                            <h1 class="home__title">START<br> SUMMER <br> 2024</h1>
+                            <p class="home__description">Sumérgete en la esencia de la moda urbana con nuestra nueva colección de Marea Urbana. Esta remera, confeccionada en 100% algodón orgánico, redefine el estilo casual con un enfoque en la calidad premium de los materiales</p>
+                            <div class="home__buttons">
+                                <a href="details.html" class="button">Comprar</a>
+                                <a href="details.html" class="button--link button--flex">Ver detalles<i
+                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+    </section>
+
+<!-- D -->
+<section class="discount section">.-.
+    <div class="discount__container container grid">
+        <img src="assets/img/discount.png" alt="" class="discount__img">
+
+        <div class="discount__data">
+            <h2 class="discount__title">30% OFF <br> En nuevos productos</h2>
+            <a href="#" class="button">Ir a lo nuevo</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- NUEVOS INGRESOS -->
+<section class="new section">
+    <h2 class="section__title">Nuevos Ingresos</h2>
+
+    <div class="new__container container">
+        <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+
+            <!-- NEW CONTENT 1 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/t-shirt-menu.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">$15.500</span>
+                        <span class="new__discount">$20.000  </span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+
+            <!-- NEW CONTENT 2 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/t-shirt1.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">$15.000</span>
+                        <span class="new__discount">$20.000</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+
+            <!-- NEW CONTENT 3 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/t-shirt2.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">14.99</span>
+                        <span class="new__discount">$29.99</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+            
+            <!-- NEW CONTENT 3 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/t-shirt2.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">15.000</span>
+                        <span class="new__discount">$20.000</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+
+            <!-- NEW CONTENT 4 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/t-shirt.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">15.500</span>
+                        <span class="new__discount">$20.000</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+
+            <!-- NEW CONTENT 4 -->
+            <div class="new__content swiper-slide">
+                <div class="new__tag">Nuevo</div>
+                <img src="assets/img/kisspng-tupac-shakur-t-shirt-clothing-sweatshirt-travis-barker-bli-884177-fut-2-5c73e765b92671.2536879615510997497584.png" alt="" class="new__img">
+                <h3 class="new__title">Remera</h3>
+                <span class="new__subtitle">Accesorio</span>
+
+                <div class="new__prices">
+                    <span class="new__prices">
+                        <span class="new__prices">$15.500</span>
+                        <span class="new__discount">$20.000</span>
+                </div>
+
+                <a href="details.html" class="button new__button">
+                    <i class="bx bx-cart-alt new__icon"></i>
+                </a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PASOS -->
+<section class="pasos section container">
+    <div class="pasos__bg">
+        <h2 class="section__title">Como ordenar productos <br> desde la web</h2>
+
+        <div class="pasos__container grid">
+
+            <!-- CARD PASOS 1 -->
+            <div class="pasos__card">
+                <div class="pasos__card-number">01</div>
+                <h3 class="pasos__card-title">Elegir Productos</h3>
+                <p class="pasos__card-description">
+                    Tenemos Variedad de productos para elegir.
+                </p>
+            </div> 
+
+            <!-- CARD PASOS 2 -->
+            <div class="pasos__card">
+                <div class="pasos__card-number">02</div>
+                <h3 class="pasos__card-title">Realizar el pedido</h3>
+                <p class="pasos__card-description">
+                    Una vez configurado su pedido, pasamos al siguiente paso que es el envío.
+                </p>
+            </div>
+
+            <!-- CARD PASOS 3 -->
+            <div class="pasos__card">
+                <div class="pasos__card-number">03</div>
+                <h3 class="pasos__card-title">Recibir el pedido entregado</h3>
+                <p class="pasos__card-description">
+                    Nuestro proceso de entrega es sencillo, recibes el pedido directamente en tu casa.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer section">
+    <div class="footer__container container grid">
+
+        <!-- FOOTER CONTENT 1 -->
+        <div class="footer__content">
+            <a href="#" class="footer__logo">
+                <i class="bx bxs-shopping-bags footer__logo-icon"></i> e-shopper
+            </a>
+
+            <p class="footer__description">Enjoy the biggest sale <br> of your life.</p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__social-link"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- FOOTER CONTENT 2 -->
+        <div class="footer__content">
+            <h3 class="footer__title">About</h3>
+
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Sobre Nosotros</a></li>
+                <li><a href="#" class="footer__link">Support center</a></li>
+                <li><a href="#" class="footer__link">Customer Support</a></li>
+            </ul>
+    </div>
+
+        <!-- FOOTER CONTENT 3 -->
+        <div class="footer__content">
+            <h3 class="footer__title">Servicios</h3>
+
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Shop</a></li>
+                <li><a href="#" class="footer__link">Discounts</a></li>
+                <li><a href="#" class="footer__link">Shipping mode</a></li>
+            </ul>
+    </div>
+
+        <!-- FOOTER CONTENT 4 -->
+        <div class="footer__content">
+            <h3 class="footer__title">Compañia</h3>
+
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Register</a></li>
+                <li><a href="#" class="footer__link">Contact Us</a></li>
+                <li><a href="#" class="footer__link">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <span class="footer__copy">&#169;</span>
+
+</footer>
+
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+</a>
+
+<!-- SWIPER JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

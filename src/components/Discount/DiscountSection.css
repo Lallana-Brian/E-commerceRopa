@@ -1,0 +1,53 @@
+/* =========DISCOUNT SECTION=========== */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.discount__container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  background-color: var(--container-color); /* Asegúrate de tener esta variable definida */
+  padding: 3rem 0;
+  border-radius: 3rem;
+  max-width: 1000px; /* Limita el ancho máximo */
+  width: 100%; /* Para asegurar que ocupe el ancho disponible hasta el max-width */
+  margin: 10% auto; /* Centra el contenedor horizontalmente */
+}
+  
+  .discount__img {
+    width: 200px;
+  }
+  
+  .discount__data {
+    padding-left: 6rem;
+    text-align: center;
+  }
+  
+  .discount__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+  }
+
+  .button {
+      padding: 10px 20px;
+      background-color: var(--first-color-alt);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 25%;
+      height: 60px;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: var(--first-color);
+      color: #fff
+    }
+    
+  
