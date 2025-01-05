@@ -1,0 +1,53 @@
+/* Estilos generales para el footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--container-color);
+    color: var(--container-color);
+    text-align: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+  
+  /* Estilo para cada columna */
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1rem; /* Añadir espacio entre columnas en pantallas pequeñas */
+  }
+  
+  /* Estilo para los títulos */
+  .footer-title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo para los enlaces sociales */
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .social-links a {
+    color: var(--first-color);
+    text-decoration: none;
+    font-size: var(--smaller-font-size);
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: var(--first-color-alt);
+  }
+  

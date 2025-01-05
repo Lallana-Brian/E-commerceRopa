@@ -24,9 +24,6 @@ const Navbar = () => {
           <a href="blog.html" className="nav__link">Blog</a>
         </li>
         <li className="nav__item">
-          <a href="faq.html" className="nav__link">Faq's</a>
-        </li>
-        <li className="nav__item">
           <a href="contact.html" className="nav__link">Contacto</a>
         </li>
       </ul>
@@ -43,7 +40,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Buttons */}
         <div className="nav__btns">
           <div className="login__toggle" id="login-button">
             <i className="bx bx-user"></i>

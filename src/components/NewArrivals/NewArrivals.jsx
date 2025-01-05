@@ -1,5 +1,7 @@
 import React from "react";
+import { HomeIcon } from '@heroicons/react/24/solid';
 import "./NewArrivals.css";
+
 
 const NewArrivals = () => {
   // Datos de los nuevos ingresos
@@ -59,6 +61,7 @@ const NewArrivals = () => {
       link: "details.html",
     },
   ];
+  
 
   return (
     <section className="new section" id="newArrivals">
@@ -78,7 +81,7 @@ const NewArrivals = () => {
                 <span className="new__discount">{item.discount}</span>
               </div>
               <a href={item.link} className="button new__button">
-                <i className="bx bx-cart-alt new__icon"></i>
+                <HomeIcon className="h-6 w-6 text-gray-600" />
               </a>
             </div>
           ))}
@@ -89,3 +92,6 @@ const NewArrivals = () => {
 };
 
 export default NewArrivals;
+
+
+

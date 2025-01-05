@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import HomeSwiper from "./components/Home/homeSwiper"; 
 import DiscountSection from "./components/Discount/DiscountSection"; 
+import SearchBar from "./components/CodePromo/SearchBar";
 import NewArrivals from "./components/NewArrivals/NewArrivals";
-import DarkModeToggle from "./components/DarkMode/DarkModeProvider";
 import "./App.css"; 
 import DarkModeProvider from "./components/DarkMode/DarkModeProvider";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
       <main>
         <HomeSwiper />
         <DiscountSection />
+        <SearchBar />
         <NewArrivals />
-        
       </main>
+
+      <Footer />
     </div>
   );
 }

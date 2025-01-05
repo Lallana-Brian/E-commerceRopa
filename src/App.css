@@ -18,7 +18,7 @@
   --first-color-alt: hsl(0, 90%, 65%);
 
   .dark-mode {
-    --header-color: hsl(0, 0%, 10%);;
+    --header-color: rgba(32, 32, 32, 0.9);
     --title-color: hsl(0, 0%, 90%);
     --nav-color: hsl(0, 0%, 80%);
     --text-color: hsl(0, 0%, 70%);

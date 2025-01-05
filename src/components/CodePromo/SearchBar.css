@@ -1,0 +1,60 @@
+/* Estilos generales para la sección */
+.search-section {
+    text-align: center;
+    margin: 2rem auto;
+    padding: var(--mb-1-5);
+    max-width: 600px;
+  }
+  
+  /* Título principal */
+  .search-title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+  }
+  
+  /* Subtítulo */
+  .search-subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    margin-top: var(--mb-2);
+  }
+  
+  /* Contenedor de la barra de búsqueda */
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: var(--mb-2);
+  }
+  
+  /* Barra de búsqueda */
+  .search-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--container-color); /* Fondo adaptable */
+  }
+  
+  /* Botón de búsqueda */
+  .search-button {
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: var(--first-color-alt);
+  }
+  
