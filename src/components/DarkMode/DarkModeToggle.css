@@ -1,0 +1,22 @@
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: var(--container-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background: var(--text-color);
+  color: var(--container-color);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
